@@ -1,0 +1,367 @@
+/* Slider */
+.slick-slider {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+.slick-list:focus {
+	outline: none;
+}
+
+.slick-list.dragging {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+	display: table;
+	content: '';
+}
+
+.slick-track:after {
+	clear: both;
+}
+
+.slick-loading .slick-track {
+	visibility: hidden;
+}
+
+.slick-slide {
+	display: none;
+	float: left;
+	height: 100%;
+	min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+	float: right;
+}
+
+.slick-slide img {
+	display: block;
+}
+
+.slick-slide.slick-loading img {
+	display: none;
+}
+
+.slick-slide.dragging img {
+	pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+	display: block;
+}
+
+.slick-loading .slick-slide {
+	visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+	display: block;
+	height: auto;
+	border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+	display: none;
+}
+
+#external-buttons {
+	background-color: grey;
+	color: white;
+}
+
+#external-buttons a.active {
+	color: white;
+}
+
+.external-buttons2 {
+	height: auto;
+	color: #222;
+}
+
+.external-buttons2 a:hover {
+	height: auto!important;
+}
+
+.external-buttons2 a {
+	color: #222;
+	min-height: auto!important;
+	display: flex;
+}
+
+.external-buttons2 a.active {
+	background-image: url("../images/food-box-bg-marker.gif");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: white;
+	height: auto!important;
+}
+
+.external-b-burritos {
+	height: auto;
+	color: #222;
+}
+
+.external-b-burritos a:hover {
+	height: auto!important;
+}
+
+.external-b-burritos a {
+	color: #222;
+	min-height: auto!important;
+	display: flex;
+}
+
+.external-b-burritos a.active {
+	background-image: url("../images/food-box-bg-marker.gif");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: white;
+	height: auto!important;
+}
+
+.external-b-cups {
+	height: auto;
+	color: #222;
+}
+
+.external-b-cups a:hover {
+	height: auto!important;
+}
+
+.external-b-cups a {
+	color: #222;
+	min-height: auto!important;
+	display: flex;
+}
+
+.external-b-cups a.active {
+	background-image: url("../images/food-box-bg-marker.gif");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: white;
+	height: auto!important;
+}
+
+.external-b-salads {
+	height: auto;
+	color: #222;
+}
+
+.external-b-salads a:hover {
+	height: auto!important;
+}
+
+.external-b-salads a {
+	color: #222;
+	min-height: auto!important;
+	display: flex;
+}
+
+.external-b-salads a.active {
+	background-image: url("../images/food-box-bg-marker.gif");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: white;
+	height: auto!important;
+}
+
+.external-b-tacos {
+	height: auto;
+	color: #222;
+}
+
+.external-b-tacos a:hover {
+	height: auto!important;
+}
+
+.external-b-tacos a {
+	color: #222;
+	min-height: auto!important;
+	display: flex;
+}
+
+.external-b-tacos a.active {
+	background-image: url("../images/food-box-bg-marker2.gif");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: white;
+	height: auto!important;
+}
+
+.external-b-sides {
+	height: auto;
+	color: #222;
+}
+
+.external-b-sides a:hover {
+	height: auto!important;
+}
+
+.external-b-sides a {
+	color: #222;
+	min-height: auto!important;
+	display: flex;
+}
+
+.external-b-sides a.active {
+	background-image: url("../images/food-box-bg-marker2.gif");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: white;
+	height: auto!important;
+}
+
+.external-b-snacks {
+	height: auto;
+	color: #222;
+}
+
+.external-b-snacks a:hover {
+	height: auto!important;
+}
+
+.external-b-snacks a {
+	color: #222;
+	min-height: auto!important;
+	display: flex;
+}
+
+.external-b-snacks a.active {
+	background-image: url("../images/food-box-bg-marker2.gif");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: white;
+	height: auto!important;
+}
+
+.external-b-dips {
+	height: auto;
+	color: #222;
+}
+
+.external-b-dips a:hover {
+	height: auto!important;
+}
+
+.external-b-dips a {
+	color: #222;
+	min-height: auto!important;
+	display: flex;
+}
+
+.external-b-dips a.active {
+	background-image: url("../images/food-box-bg-marker2.gif");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: white;
+	height: auto!important;
+}
+
+.external-b-desserts {
+	height: auto;
+	color: #222;
+}
+
+.external-b-desserts a:hover {
+	height: auto!important;
+}
+
+.external-b-desserts a {
+	color: #222;
+	min-height: auto!important;
+	display: flex;
+}
+
+.external-b-desserts a.active {
+	background-image: url("../images/food-box-bg-marker2.gif");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: white;
+	height: auto!important;
+}
+
+.external-b-drinks {
+	height: auto;
+	color: #222;
+}
+
+.external-b-drinks a:hover {
+	height: auto!important;
+}
+
+.external-b-drinks a {
+	color: #222;
+	min-height: auto!important;
+	display: flex;
+}
+
+.external-b-drinks a.active {
+	background-image: url("../images/food-box-bg-marker-drinks.gif");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: white;
+	height: auto!important;
+}
+
+.external-b-cheesetostado {
+	height: auto;
+	color: #222;
+}
+
+.external-b-cheesetostado a:hover {
+	height: auto!important;
+}
+
+.external-b-cheesetostado a {
+	color: #222;
+	min-height: auto!important;
+	display: flex;
+}
+
+.external-b-cheesetostado a.active {
+	background-image: url("../images/food-box-bg-marker-drinks.gif");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-color: white;
+	height: auto!important;
+}
