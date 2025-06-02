@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bäckerei Tradita</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-text">
+      <h1 class="fade-in">Bäckerei Tradita</h1>
+      <p class="slide-up">Handgemacht. Authentisch. Köstlich.</p>
+    </div>
+  </header>
+  <nav class="nav">
+    <div class="logo">Tradita</div>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="nav-links">
+      <a onclick="showPage('home')">Start</a>
+      <a onclick="showPage('produkte')">Produkte</a>
+      <a onclick="showPage('standorte')">Standorte</a>
+      <a onclick="showPage('kontakt')">Kontakt</a>
+    </div>
+  </nav>
+  <main>
+    <section id="home" class="page active">
+      <h2>Willkommen bei Tradita</h2>
+      <p>Genuss aus Tradition seit vielen Jahren in Frankfurt Höchst.</p>
+    </section>
+    <section id="produkte" class="page">
+      <h2>Unsere Spezialitäten</h2>
+      <p>Brote, Brötchen, Gebäck und mehr ...</p>
+    </section>
+    <section id="standorte" class="page">
+      <h2>Unsere Filialen</h2>
+      <p>Königsteiner Straße 51 + weitere in Frankfurt</p>
+    </section>
+    <section id="kontakt" class="page">
+      <h2>Kontakt</h2>
+      <p>Telefon, E-Mail, Kontaktformular</p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Bäckerei Tradita – Alle Rechte vorbehalten.</p>
+  </footer>
+</body>
+</html>
