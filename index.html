@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bäckerei Tradita</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    nav h1 {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+    .burger {
+      font-size: 1.8rem;
+      cursor: pointer;
+      user-select: none;
+    }
+    .menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 2rem;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      flex-direction: column;
+      width: 220px;
+    }
+    .menu a {
+      padding: 1rem;
+      text-decoration: none;
+      color: #222;
+      border-bottom: 1px solid #eee;
+      cursor: pointer;
+    }
+    .menu a:hover {
+      background-color: #f0f0f0;
+    }
+    section {
+      display: none;
+      padding: 6rem 2rem 3rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section.active {
+      display: block;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>Tradita</h1>
+  <div class="burger" onclick="toggleMenu()">☰</div>
+  <div class="menu" id="menu">
+    <a onclick="showSection('ueberuns')">Über Uns</a>
+    <a onclick="showSection('angebote')">Angebote</a>
+    <a onclick="showSection('service')">Service</a>
+  </div>
+</nav>
+
+<section id="ueberuns" class="active">
+  <h2>Über uns</h2>
+  <p>Die Bäckerei Tradita steht für Handwerkskunst, kosovarische Rezepturen und frische Zutaten. Seit vielen Jahren versorgen wir Frankfurt Höchst mit frischen Backwaren und herzlicher Gastfreundschaft.</p>
+</section>
+
+<section id="angebote">
+  <h2>Unsere Angebote</h2>
+  <ul>
+    <li>Frische Brote & Brötchen</li>
+    <li>Kosovarische Spezialitäten & Gebäck</li>
+    <li>Kuchen & Süßes</li>
+    <li>Kaffee & belegte Snacks</li>
+  </ul>
+</section>
+
+<section id="service">
+  <h2>Service & Kontakt</h2>
+  <p><strong>Öffnungszeiten:</strong><br>
+  Mo–Fr: 05:00 – 21:00 Uhr<br>
+  Sa–So: 07:00 – 22:00 Uhr</p>
+
+  <p><strong>Standort:</strong><br>
+  Königsteiner Straße 51, 65929 Frankfurt Höchst</p>
+
+  <p><strong>Kontakt:</strong><br>
+  Tel: +49 69 123456789<br>
+  E-Mail: <a href="mailto:tradita@bäckerei.de">tradita@bäckerei.de</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Bäckerei Tradita – Alle Rechte vorbehalten.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  }
+
+  function showSection(id) {
+    const sections = document.querySelectorAll("section");
+    sections.forEach(sec => sec.classList.remove("active"));
+    document.getElementById(id).classList.add("active");
+    document.getElementById("menu").style.display = "none";
+  }
+</script>
+
+<script src="js/smoothscroll.js"></script>
+<script src="js/imgswap.js"></script>
+<script src="js/activemenu.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/preloader.js"></script>
+</body>
+</html>
