@@ -1,0 +1,37 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+.hero {
+  height: 100vh;
+  background: url('../img/hero.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+.hero-text h1 { font-size: 3rem; animation: fadeIn 2s ease-in-out; }
+.hero-text p { font-size: 1.5rem; animation: slideUp 2s ease-out; }
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.burger { cursor: pointer; font-size: 2rem; }
+.nav-links { display: none; flex-direction: column; background: #fff; position: absolute; right: 2rem; top: 60px; }
+.nav-links a { padding: 1rem; text-decoration: none; color: #000; }
+.nav-links.show { display: flex; }
+.page { display: none; padding: 6rem 2rem; }
+.page.active { display: block; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes slideUp { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
