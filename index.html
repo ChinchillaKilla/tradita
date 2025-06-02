@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bäckerei Tradita</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/bg-images.css" />
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/slick-layout.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+    .nav-container h1 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    .burger {
+      font-size: 2rem;
+      cursor: pointer;
+      display: block;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #fff;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      border-left: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+    }
+    .menu a {
+      padding: 1rem;
+      text-decoration: none;
+      color: #333;
+      border-bottom: 1px solid #eee;
+    }
+    .menu a:hover {
+      background-color: #f9f9f9;
+    }
+    section {
+      padding: 6rem 2rem 4rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header {
+      padding: 7rem 2rem 4rem;
+      text-align: center;
+      background: linear-gradient(to right, #f3e7e9, #e3eeff);
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+    @media(min-width: 768px) {
+      .menu {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        border: none;
+      }
+      .burger {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <h1>Tradita</h1>
+    <div class="burger" onclick="toggleMenu()">☰</div>
+    <div class="menu" id="menu">
+      <a href="#ueberuns">Über uns</a>
+      <a href="#angebote">Angebote</a>
+      <a href="#zeiten">Öffnungszeiten</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <h2>Bäckerei Tradita – Frankfurt Höchst</h2>
+  <p>Tradition trifft Genuss – Willkommen bei Ihrer Familienbäckerei.</p>
+</header>
+
+<main>
+  <section id="ueberuns">
+    <h2>Über uns</h2>
+    <p>Die Bäckerei Tradita steht seit Jahren für authentisches Handwerk, frische Zutaten und kosovarische Backkunst. Mit Herzblut und Erfahrung wird täglich frisch gebacken – für ein Stück Heimat zum Mitnehmen.</p>
+  </section>
+
+  <section id="angebote">
+    <h2>Angebote & Spezialitäten</h2>
+    <ul>
+      <li>Ofenfrische Brötchen und Brote</li>
+      <li>Traditionelles Gebäck und süße Leckereien</li>
+      <li>Feine Kaffee- und Teespezialitäten</li>
+      <li>Snacks und belegte Brote zum Mitnehmen</li>
+    </ul>
+  </section>
+
+  <section id="zeiten">
+    <h2>Unsere Öffnungszeiten</h2>
+    <ul>
+      <li>Montag bis Freitag: 05:00 – 21:00 Uhr</li>
+      <li>Samstag & Sonntag: 07:00 – 22:00 Uhr</li>
+    </ul>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p><strong>Adresse:</strong> Königsteiner Straße 51, 65929 Frankfurt Höchst</p>
+    <p><strong>Telefon:</strong> +49 69 123456789</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:tradita@bäckerei.de">tradita@bäckerei.de</a></p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Bäckerei Tradita – Alle Rechte vorbehalten.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    if (menu.style.display === "flex") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "flex";
+    }
+  }
+</script>
+
+<script src="js/smoothscroll.js"></script>
+<script src="js/imgswap.js"></script>
+<script src="js/activemenu.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/preloader.js"></script>
+</body>
+</html>
